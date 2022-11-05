@@ -101,8 +101,4 @@ public class PlaygroundTest {
         System.out.println("이어진");
 
         }
-    @Test
-    public void asdf () {
-
-    }
 }
