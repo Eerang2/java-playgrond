@@ -100,8 +100,6 @@ public class PlaygroundTest {
     @Test
     public void 비교_연산자 () {
         System.out.println("이어진");
-
-
         System.out.println("이진우");
         System.out.println("이진우");
         System.out.println("이진우");
@@ -141,5 +139,175 @@ public class PlaygroundTest {
         List<Integer> nameLength = names.stream().map(String::length).collect(Collectors.toList());
 
         Assertions.assertNotNull(names);
+    }
+
+    @Test
+    void if문에대해서araboza() {
+        // given
+        String name = "이희진";
+
+        // when
+        if (name == "이희진") {
+            System.out.println("이름이 이희진이 맞아요");
+        } else {
+            System.out.println("이름이 이희진이 아닌데용?");
+        }
+
+        // then
+    }
+
+    @Test
+    void if문에대해서_한번_더_알아보자() {
+        // given
+        String name = "이진우";
+
+        // when
+        if (name.equals("이어진")) {
+            System.out.println("이어진이 맞아요");
+        } else if (name.equals("이희진")) {
+            System.out.println("희진이 맞아요");
+        } else {
+            System.out.println("나머지는 진우밖에 없는데..");
+        }
+
+        // then
+    }
+
+    @Test
+    void if_statment() {
+        // given
+        String name = "hjlee";
+
+        // when
+        if (isEjlee(name)) {
+            System.out.println("ding dong dang");
+        } else {
+            System.out.println("nope");
+        }
+
+        // then
+    }
+
+    boolean isEjlee(String name) {
+        System.out.println(name.equals("ejlee"));
+        return name.equals("ejlee");
+    }
+
+    @Test
+    void 삼항연산자() {
+        // given
+        String name = "jwlee";
+        System.out.println(isEjlee(name) ? "이어진이 맞아요" : "이어진이 아니에요");
+        // when
+
+        // then
+    }
+
+
+    @Test
+    void 중첩if문() {
+        // given
+        String name = "이진우";
+
+        // when
+        if (name == "이진우") {
+            System.out.println("이진우가 맞아요");
+            if (name.length() > 1) {
+                System.out.println("이진우 이름의 글자가 3글자네요");
+
+                if (isEjlee(name)) {
+                    System.out.println("이어진도 맞네요");
+                } else {
+                    System.out.println("이어진은 아니였네요;");
+                }
+            }
+        }
+
+        // then
+    }
+
+    @Test
+    void 진우if문_테스트() {
+        // given
+
+        String name = "소";
+        if (name == "돼지") {
+            System.out.println("꿀꿀");
+
+        } else if (name == "병아리") {
+            System.out.println("삐약삐약");
+
+        } else {
+            System.out.println("돼지가 아니에요");
+        }
+
+        // when
+
+        // then
+    }
+
+    @Test
+    void 불린타입으로if문짓기() {
+        // given
+        boolean isTrue = true;
+
+        if (isTrue) {
+            System.out.println("true!!!!");
+        } else {
+            System.out.println("false!!!");
+        }
+
+        // when
+
+        // then
+
+        System.out.println(name3("이희진"));
+
+    }
+
+    public int count() {
+        return 1;
+    }
+
+    public String name() {
+        return "이어진";
+    }
+
+    public String name2() {
+        String name = "이진우";
+        return name;
+    }
+
+    public String name3(String name) {
+        return name;
+    }
+
+    public int integer(int count) {
+        List<String> names = Arrays.asList("이어진", "이희진", "이진우", "정복문", "이길주");
+
+        for (int i = 0; i <= names.size(); i++) {
+            int i1 = count + i;
+            count++;
+            System.out.println(i);
+            System.out.println(i1);
+
+            if (i == 2) {
+                System.out.println("그만 돌아!");
+                break;
+            } else {
+                System.out.println("아직이네");
+            }
+        }
+
+        return count;
+    }
+
+    @Test
+    void integer에대한테스트() {
+        // given
+        integer(10);
+        // when
+
+        // then
     }
 }
