@@ -1,7 +1,13 @@
 package com.javaplaygrond;
 
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class PlaygroundTest {
 
@@ -101,4 +107,13 @@ public class PlaygroundTest {
         System.out.println("이어진");
 
         }
+
+    @Test
+    void 이어진의_테스트() {
+        List<String> names = new ArrayList<>();
+//        피카추", "라이츄", "파이리", "꼬북이", "피죤
+        List<Integer> nameLength = names.stream().map(String::length).collect(Collectors.toList());
+
+        Assertions.assertNotNull(names);
+    }
 }
