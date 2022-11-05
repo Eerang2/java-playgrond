@@ -99,13 +99,39 @@ public class PlaygroundTest {
     }
     @Test
     public void 비교_연산자 () {
-         System.out.println(1==2);  //false
-         System.out.println(1==1); //true
-         System.out.println("one"=="two");  //false
-         System.out.println("one".equals("two"));  //true
-
         System.out.println("이어진");
 
+
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
+        System.out.println("이진우");
         }
 
     @Test
