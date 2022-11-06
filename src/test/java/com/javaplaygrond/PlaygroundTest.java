@@ -4,8 +4,10 @@ package com.javaplaygrond;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -21,7 +23,6 @@ public class PlaygroundTest {
     }
 
 
-
     @Test
     public void 문자열_다루기() {
         char ch = 'A';
@@ -33,61 +34,61 @@ public class PlaygroundTest {
     }
 
 
-        @Test
-        public void 연산자_다루기() {
-            int result1 = 1 + 2;
-            System.out.println("result1 = " + result1);
+    @Test
+    public void 연산자_다루기() {
+        int result1 = 1 + 2;
+        System.out.println("result1 = " + result1);
 
-            int result2 = result1 - 1;
-            System.out.println("result2 = " + result2);
+        int result2 = result1 - 1;
+        System.out.println("result2 = " + result2);
 
-            int result3 = result2 * 4;
-            System.out.println("result3 = " + result3);
+        int result3 = result2 * 4;
+        System.out.println("result3 = " + result3);
 
-            int result4 = result3 / 2;
-            System.out.println("result4 = " + result4);
-            
-            int result5 = result4 % 3;
-            System.out.println("result5 = " + result5);
+        int result4 = result3 / 2;
+        System.out.println("result4 = " + result4);
 
-            String firstString = "This is";
-            String secondString = " a concatenated string.";
-            String thirdString = firstString + secondString;
-            System.out.println(thirdString);
+        int result5 = result4 % 3;
+        System.out.println("result5 = " + result5);
+
+        String firstString = "This is";
+        String secondString = " a concatenated string.";
+        String thirdString = firstString + secondString;
+        System.out.println(thirdString);
 
     }
 
 
-    
     @Test
     public void 문자열_나머지() {
 
         int a = 3;
 
-        System.out.println(0%a);//0
-        System.out.println(1%a);//1
-        System.out.println(2%a);//2
-        System.out.println(3%a);
-        System.out.println(4%a);
-        System.out.println(5%a);
-        System.out.println(6%a);
+        System.out.println(0 % a);//0
+        System.out.println(1 % a);//1
+        System.out.println(2 % a);//2
+        System.out.println(3 % a);
+        System.out.println(4 % a);
+        System.out.println(5 % a);
+        System.out.println(6 % a);
     }
 
 
     @Test
-    public void 연산자_형변환 () {
+    public void 연산자_형변환() {
         int a = 10;
         int b = 3;
 
         float c = 10.0F;
         float d = 3.0F;
 
-        System.out.println(a/b);
-        System.out.println(c/d);
-        System.out.println(a/d);
+        System.out.println(a / b);
+        System.out.println(c / d);
+        System.out.println(a / d);
     }
+
     @Test
-    public void 단항연산자 () {
+    public void 단항연산자() {
         int i = 3;
         i++;
         System.out.println(i); // 4 출력
@@ -97,8 +98,9 @@ public class PlaygroundTest {
         System.out.println(i++); // 6 출력
         System.out.println(i); // 7 출력
     }
+
     @Test
-    public void 비교_연산자 () {
+    public void 비교_연산자() {
         System.out.println("이어진");
         System.out.println("이진우");
         System.out.println("이진우");
@@ -130,7 +132,7 @@ public class PlaygroundTest {
         System.out.println("이진우");
         System.out.println("이진우");
         System.out.println("이진우");
-        }
+    }
 
     @Test
     void 이어진의_테스트() {
@@ -309,5 +311,34 @@ public class PlaygroundTest {
         // when
 
         // then
+    }
+
+    @Test
+    void 변수다시공부() {
+        int number;  //number가 변수
+        int number2 = 10; //number2에 10을 초기화함
+        System.out.println(number2);
+
+    }
+    @Test
+    void 타입다시공부() {
+        Date today = null;
+
+        String name = "Ja"+"Va";
+        System.out.println(name);
+
+        String a = 7 + " ";
+        String b = " " + 7;
+        String c = 7 + "7";
+        String d = "7" + 7;
+        String e = 7 + 7 + "7"; //  7+7 이후에 7이 붙음
+        String f = "7" + 7 + 7;  //  7과7이 붙고 7이붙음
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(f);
     }
 }
