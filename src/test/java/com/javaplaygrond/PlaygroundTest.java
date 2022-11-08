@@ -341,4 +341,43 @@ public class PlaygroundTest {
         System.out.println(e);
         System.out.println(f);
     }
+
+
+    @Test
+    void 연산자연습_크다_작다() {
+
+        //연산자연습
+        // ><
+
+        System.out.println(1 == 2);           //false
+        System.out.println(1 == 1);           //true
+        System.out.println("one" == "two");   //false
+        System.out.println("one" == "one");   //true
+
+
+        System.out.println(10 > 20);       //false
+        System.out.println(10 > 2);            //true
+        System.out.println(10 > 10);           //false
+    }
+    @Test
+    void 연산자연습_크거나같다_작거나같다(){
+
+        System.out.println(10 >= 20); // false
+        System.out.println(10 >= 2); // true
+        System.out.println(10 >= 10); // true
+
+    }
+    @Test
+    void 연산자연습_점equals(){
+        String a = "Hello world";
+        String c = a;
+        String b = new String("Hello world");
+        System.out.println("a => : " + System.identityHashCode(a));
+        System.out.println("b  =>  : " + System.identityHashCode(b));
+        System.out.println("c =>  : " + System.identityHashCode(c));
+        System.out.println("a == b =" + (a == b)); //false
+        System.out.println("a == c =" + (a == c)); //false
+        System.out.println("a.equals(b) =" + a.equals(b));  //true
+    }
+
 }
