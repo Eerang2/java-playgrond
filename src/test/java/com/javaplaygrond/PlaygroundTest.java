@@ -1,6 +1,7 @@
 package com.javaplaygrond;
 
 
+import jdk.incubator.vector.VectorOperators;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -378,6 +379,62 @@ public class PlaygroundTest {
         System.out.println("a == b =" + (a == b)); //false
         System.out.println("a == c =" + (a == c)); //false
         System.out.println("a.equals(b) =" + a.equals(b));  //true
+    }
+    @Test
+    void if문연습() {
+        if (true) {
+            System.out.println("result : true");
+
+            System.out.println(1);
+            System.out.println(2);
+            System.out.println(3);
+            System.out.println(4);
+        }
+        System.out.println(5);       //조건이true라서 1234를 포함하여 5출력
+
+    }
+    @Test
+    void if문연습2() {
+        if (false) {
+            System.out.println("result : true");
+
+            System.out.println(1);
+            System.out.println(2);
+            System.out.println(3);
+            System.out.println(4);
+        }
+        System.out.println(5);          //조건이false라서 1234를 건너뛰고 5 만 출력
+
+
+    }
+    @Test
+    void else연습() {
+        if (true) {
+            System.out.println(1);   //조건이true라서 1출력
+        } else {
+            System.out.println(2);
+        }
+    }
+    @Test
+    void else연습2(){
+        if (false) {
+            System.out.println(1);    //조건이false라서 else값 2 출력
+        } else {
+            System.out.println(2);
+        }
+    }
+    @Test
+    void else_if연습() {
+        if(false){
+            System.out.println(1);    //조건이 false라서 else if로 넘어감
+        } else if(false) {
+            System.out.println(2);    //조건이 false라서 다음으로 넘어감
+        } else if(true) {
+            System.out.println(3);    //조건이 true라서 3 출력
+        } else {
+            System.out.println(4);
+        }
+
     }
 
 }
