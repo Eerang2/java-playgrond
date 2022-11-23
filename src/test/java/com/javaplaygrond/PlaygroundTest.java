@@ -1,11 +1,11 @@
 package com.javaplaygrond;
 
 
-import jdk.incubator.vector.VectorOperators;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import javax.xml.crypto.Data;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -29,7 +29,7 @@ public class PlaygroundTest {
         char ch = 'A';
         System.out.println("ch1111 -> " + ch);
         int integerTypeOfCh = (int) ch;
-        System.out.println("integerTypeOfCh11111 -> " + integerTypeOfCh);
+          System.out.println("integerTypeOfCh11111 -> " + integerTypeOfCh);
 
 
     }
@@ -465,5 +465,68 @@ public class PlaygroundTest {
             System.out.println("wrong");
         }
     }
+    @Test
+    void Not (){
+        if (!true) {
+            System.out.println(1);
+        }
+        if (!false) {
+            System.out.println(2);
+        }
+    }
+    @Test
+    void switch문(){
+        System.out.println("switch(1)");
+        switch(5){
+            case 1:
+                System.out.println("one");
+                break;
+            case 2:
+                System.out.println("two");
+                break;
+            case 3:
+                System.out.println("three");
+                break;
+            default:
+                System.out.println("default");
+        }
+
+        System.out.println("switch(2)");
+        switch(2){
+            case 1:
+                System.out.println("one");
+                break;
+            case 2:
+                System.out.println("two");
+                break;
+            case 3:
+                System.out.println("three");
+                break;
+        }
+
+        System.out.println("switch(3)");
+        switch(3){
+            case 1:
+                System.out.println("one");
+                break;
+            case 2:
+                System.out.println("two");
+                break;
+            case 3:
+                System.out.println("three");
+                break;
+        }
+        //같은값이 나온다
+        int val = 1;
+        if(val == 1){
+            System.out.println("one");
+        } else if(val == 2){
+            System.out.println("two");
+        } else if(val == 3) {
+            System.out.println("three");
+        }
+
+    }
+
 
 }
